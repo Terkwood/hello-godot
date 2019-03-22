@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Bouncy Platform Long.png" type="Texture" id=3]
+[ext_resource path="res://Wall1.gd" type="Script" id=3]
+[ext_resource path="res://assets/Bouncy Platform Long.png" type="Texture" id=4]
 
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.5
@@ -25,12 +26,13 @@ editor/display_folded = true
 position = Vector2( 292.047, 265.522 )
 rotation = -0.925025
 physics_material_override = SubResource( 1 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="WallContainer/Wall1"]
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall1"]
 rotation = 1.5708
@@ -46,7 +48,7 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="WallContainer/Wall5"]
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall5"]
 rotation = 1.5708
