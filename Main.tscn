@@ -4,14 +4,14 @@
 [ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Bouncy Platform Long.png" type="Texture" id=3]
 
-[sub_resource type="PhysicsMaterial" id=6]
+[sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.5
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 28.7617
 height = 253.621
 
-[sub_resource type="PhysicsMaterial" id=7]
+[sub_resource type="PhysicsMaterial" id=3]
 bounce = 0.5
 
 [node name="Main" type="Node"]
@@ -22,9 +22,9 @@ Ball = ExtResource( 2 )
 
 [node name="Wall1" type="StaticBody2D" parent="WallContainer"]
 editor/display_folded = true
-position = Vector2( 291.047, 265.522 )
+position = Vector2( 292.047, 265.522 )
 rotation = -0.925025
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -40,7 +40,7 @@ shape = SubResource( 2 )
 editor/display_folded = true
 position = Vector2( 30.2087, 337.685 )
 rotation = 1.5708
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
