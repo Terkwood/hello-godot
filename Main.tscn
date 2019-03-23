@@ -22,7 +22,6 @@ Ball = ExtResource( 2 )
 [node name="WallContainer" type="Node" parent="."]
 
 [node name="Wall1" type="StaticBody2D" parent="WallContainer"]
-editor/display_folded = true
 position = Vector2( 292.047, 265.522 )
 rotation = -0.925025
 physics_material_override = SubResource( 1 )
@@ -35,6 +34,54 @@ __meta__ = {
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall1"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall2" type="StaticBody2D" parent="WallContainer"]
+position = Vector2( 545.047, 458.522 )
+rotation = 4.14167
+physics_material_override = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall2"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall2"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall3" type="StaticBody2D" parent="WallContainer"]
+position = Vector2( 714.047, 194.522 )
+rotation = 6.13134
+physics_material_override = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall3"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall3"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall4" type="StaticBody2D" parent="WallContainer"]
+position = Vector2( 987.047, 397.522 )
+rotation = 7.66723
+physics_material_override = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall4"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall4"]
 rotation = 1.5708
 shape = SubResource( 2 )
 
