@@ -19,7 +19,7 @@ Ball = ExtResource( 2 )
 [node name="WallContainer" type="Node" parent="."]
 
 [node name="Wall1" type="StaticBody2D" parent="WallContainer"]
-position = Vector2( 292.047, 265.522 )
+position = Vector2( 192.047, 205.522 )
 rotation = 18.5319
 physics_material_override = SubResource( 1 )
 script = ExtResource( 3 )
@@ -67,7 +67,7 @@ rotation = 1.5708
 shape = SubResource( 2 )
 
 [node name="Wall7" type="StaticBody2D" parent="WallContainer"]
-position = Vector2( 878.047, 711.522 )
+position = Vector2( 938.047, 781.522 )
 rotation = -0.923279
 physics_material_override = SubResource( 1 )
 script = ExtResource( 3 )
@@ -83,7 +83,7 @@ rotation = 1.5708
 shape = SubResource( 2 )
 
 [node name="Wall8" type="StaticBody2D" parent="WallContainer"]
-position = Vector2( 1218.05, 291.522 )
+position = Vector2( 1068.05, 351.522 )
 rotation = 0.495674
 physics_material_override = SubResource( 1 )
 script = ExtResource( 3 )
@@ -95,6 +95,22 @@ __meta__ = {
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall8"]
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Wall10" type="StaticBody2D" parent="WallContainer"]
+position = Vector2( 1218.05, 191.522 )
+rotation = 0.495674
+physics_material_override = SubResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="WallContainer/Wall10"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallContainer/Wall10"]
 rotation = 1.5708
 shape = SubResource( 2 )
 
@@ -115,7 +131,7 @@ rotation = 1.5708
 shape = SubResource( 2 )
 
 [node name="Wall2" type="StaticBody2D" parent="WallContainer"]
-position = Vector2( 545.047, 458.522 )
+position = Vector2( 415.047, 418.522 )
 rotation = 4.14167
 physics_material_override = SubResource( 1 )
 script = ExtResource( 3 )
@@ -147,7 +163,7 @@ rotation = 1.5708
 shape = SubResource( 2 )
 
 [node name="Wall4" type="StaticBody2D" parent="WallContainer"]
-position = Vector2( 987.047, 397.522 )
+position = Vector2( 807.047, 517.522 )
 rotation = 7.66723
 physics_material_override = SubResource( 1 )
 script = ExtResource( 3 )
